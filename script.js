@@ -16,5 +16,9 @@ function deleteAll() {
 function process() {
     let calculate = document.querySelector(".calculate").innerText;
     let calculates = eval(calculate);
-    document.querySelector(".answer").innerHTML = calculates;
+    if (calculates % 1 == 0) {
+        document.querySelector(".answer").innerHTML = calculates;
+    } else {
+        document.querySelector(".answer").innerHTML = calculates.toFixed(2);
+    };
 }

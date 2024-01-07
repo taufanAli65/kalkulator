@@ -48,7 +48,7 @@ body {
     align-items: end;
     width: 95%;
     height: 50%;
-    font-size: 25px;
+    font-size: 2rem;
 }
 .answer {
     display: flex;
@@ -79,6 +79,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1rem;
 }
 .bottom {
     border-bottom: 3px solid #2a2e37;
@@ -95,4 +96,22 @@ body {
 }
 .purple {
     color: #cb85e1;
+}
+
+@media screen and (max-width: 900px) {
+    .calculator-background {
+        border-radius: unset;
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .calculator {
+        border-radius: unset;
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .button {
+        font-size: 1.5rem;
+    }
 }

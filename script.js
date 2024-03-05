@@ -1,5 +1,7 @@
+let cannotFirst = ['/', '+', '%', '*'];
 function hitung(symbol) {
     let calculate = document.querySelector(".calculate").innerHTML += symbol;
+    if (cannotFirst.includes(calculate.charAt(0))) {del()}
 }
 
 function del() {
